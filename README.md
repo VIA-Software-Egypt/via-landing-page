@@ -1,59 +1,45 @@
-# ViaLanding
+# VIA Software Egypt
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 22.2.7.
+Angular 22 implementation of the supplied Burgundy Editorial design, with the original 3D branding and project imagery.
 
-## Development server
+## Run locally
 
-To start a local development server, run:
+Use Node.js 24 and npm 10 or later.
 
-```bash
-ng serve
+```sh
+npm ci
+npm start
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+Open http://localhost:4200. The home page is `/`; project notes are at `/news`.
 
-## Code scaffolding
+## Build and test
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
+```sh
+npm run build
+npm test -- --watch=false
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+The existing Angular SSR configuration is preserved. The build prerenders both pages into `dist/via-landing/browser` and emits the Node server into `dist/via-landing/server`. To run the production server:
 
-```bash
-ng generate --help
+```sh
+npm run serve:ssr:via-landing
 ```
 
-## Building
+The production preview runs on port 4000. Before deploying the Node server to a custom domain, add that hostname to `security.allowedHosts` in `angular.json` and rebuild.
 
-To build the project run:
+## Implementation
 
-```bash
-ng build
-```
+- Layout, colors, copy and project order follow the supplied desktop and 390px mobile references.
+- The home and newsroom pages are lazy-loaded Angular routes, with shared navigation, contact section and project dialog.
+- Portfolio filters use signals. The native modal provides keyboard focus containment, Escape/backdrop closing, focus restoration and scroll locking.
+- Motion includes a floating 3D ring, section reveals, mobile navigation and hover interactions. Reduced-motion preferences disable these effects.
+- Original full-resolution assets are in `public/assets`. Responsive WebP ring images, a lossless WebP logo and smaller portfolio previews reduce mobile transfers. Project galleries use the original screenshots.
+- Edit project content in `src/app/projects.ts`, layouts in `src/app/pages`, shared sections in `src/app/shared`, and the design styles in `src/styles.css`.
+- Contact cards remain **Coming soon**, matching the supplied design. Add real destinations when they are available.
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+## Verification
 
-## Running unit tests
+Production build and four behavior tests pass. Both pages were reviewed in the browser at 320, 360, 390, 768, 1024 and 1440px widths, with no horizontal page overflow. Mobile navigation, all filters, project details, Escape/focus restoration, newsroom navigation and page-specific anchor links were checked. All portfolio images loaded successfully.
 
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Local screenshots and responsive measurements are saved in the ignored `qa/` directory. Design downloads and reference archives are also ignored.

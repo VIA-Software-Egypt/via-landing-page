@@ -1,0 +1,479 @@
+<section class="hero">
+  <div class="wrap hero-inner">
+    <div viaReveal class="hero-copy">
+      <span class="eyebrow light">VIA SOFTWARE EGYPT</span>
+      <h1>Software for<br /><em>how you work.</em></h1>
+      <p>
+        Web, mobile and desktop applications.<br />Custom business systems, built around your
+        operations.
+      </p>
+      <a class="hero-explore" href="#work"
+        ><span>Discover our work</span
+        ><span class="circle-arrow"
+          ><svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+          >
+            <path d="M12 4v16M5 13l7 7 7-7" /></svg></span
+      ></a>
+    </div>
+    <div class="hero-art">
+      <img
+        fetchpriority="high"
+        decoding="async"
+        src="/assets/hero-ring-1000.webp"
+        srcset="
+          /assets/hero-ring-640.webp   640w,
+          /assets/hero-ring-1000.webp 1000w,
+          /assets/hero-ring-1774.webp 1774w
+        "
+        sizes="(max-width: 700px) 132vw, (max-width: 1700px) 62vw, 764px"
+        width="1774"
+        height="887"
+        alt="Burgundy and silver sculptural ring"
+      />
+    </div>
+    <a class="latest-teaser" href="#medcare"
+      ><span class="teaser-plus">+</span>
+      <div><small>LATEST PROJECT</small><b>Medcare</b><span>Healthcare, connected.</span></div>
+      <svg
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        aria-hidden="true"
+      >
+        <path d="M5 19 19 5M5 5h14v14" /></svg></a
+    ><span class="hero-index">01 / THE COMPANY</span>
+  </div>
+</section>
+<div class="platform-band">
+  <div class="wrap">
+    <span>OUR EXPERTISE</span><b>Web applications</b><b>Mobile applications</b
+    ><b>Desktop applications</b><b>Custom business systems</b>
+  </div>
+</div>
+<section class="section work-section" id="work">
+  <div class="wrap">
+    <div viaReveal class="section-heading">
+      <div>
+        <span class="eyebrow">01 / SELECTED WORK</span>
+        <h2>Different challenges.<br /><em>Considered software.</em></h2>
+      </div>
+      <p>A closer look at the applications,<br />platforms and systems in our portfolio.</p>
+    </div>
+    <article viaReveal class="featured" id="medcare">
+      <div class="featured-art">
+        <div class="medcare-identity">
+          Medcare<span>+</span><small>Healthcare, connected.</small>
+        </div>
+        <div class="phone-set">
+          <img
+            loading="lazy"
+            decoding="async"
+            class="phone side"
+            src="/assets/medcare-lab.png"
+            alt="Medcare laboratory test selection screen"
+            width="402"
+            height="874"
+          /><img
+            loading="lazy"
+            decoding="async"
+            class="phone main-phone"
+            src="/assets/medcare-home.png"
+            alt="Medcare healthcare services homepage"
+            width="402"
+            height="1250"
+          /><img
+            loading="lazy"
+            decoding="async"
+            class="phone side"
+            src="/assets/medcare-staff.png"
+            alt="Medcare medical staff requests screen"
+            width="402"
+            height="1250"
+          />
+        </div>
+      </div>
+      <div class="featured-copy">
+        <span class="status">LATEST PROJECT</span
+        ><span class="eyebrow">HEALTHCARE · MOBILE APPLICATION</span>
+        <h3>Medcare</h3>
+        <p>A connected experience for patients and the people who care for them.</p>
+        <ul>
+          <li>Medical services & laboratory requests</li>
+          <li>Bookings, results & request tracking</li>
+          <li>Dedicated medical-team workflows</li>
+        </ul>
+        <button class="text-link" (click)="projects.open('medcare')">
+          Explore the project
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+          >
+            <path d="M5 19 19 5M5 5h14v14" />
+          </svg>
+        </button>
+      </div>
+    </article>
+    <div class="mobile-projects">
+      <article viaReveal class="project-card large" data-type="mobile">
+        <button
+          class="project-trigger"
+          (click)="projects.open('paxi')"
+          aria-label="View Paxi Go project details"
+        >
+          <div class="app-art paxi">
+            <span class="app-wordmark">Paxi Go</span
+            ><img
+              loading="lazy"
+              decoding="async"
+              src="/assets/paxi-go.webp"
+              alt="Paxi Go mobile app screen"
+            /><span class="platform-note">iOS & Android</span>
+          </div>
+          <div class="project-caption">
+            <div>
+              <span class="eyebrow">Mobile · Transport</span>
+              <h3>Paxi Go</h3>
+            </div>
+            <span class="circle-arrow"
+              ><svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path d="M5 19 19 5M5 5h14v14" /></svg
+            ></span>
+          </div>
+        </button>
+        <p>Ride and delivery requests, connected through one mobile experience.</p>
+      </article>
+      <article viaReveal class="project-card large" data-type="mobile">
+        <button
+          class="project-trigger"
+          (click)="projects.open('ulm')"
+          aria-label="View ULM Care project details"
+        >
+          <div class="app-art ulm">
+            <span class="app-wordmark">ULM Care</span
+            ><img
+              loading="lazy"
+              decoding="async"
+              src="/assets/ulm-care.webp"
+              alt="ULM Care mobile app screen"
+            /><span class="platform-note">iOS & Android</span>
+          </div>
+          <div class="project-caption">
+            <div>
+              <span class="eyebrow">Mobile · Healthcare</span>
+              <h3>ULM Care</h3>
+            </div>
+            <span class="circle-arrow"
+              ><svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path d="M5 19 19 5M5 5h14v14" /></svg
+            ></span>
+          </div>
+        </button>
+        <p>Medical services and home-visit bookings in one place.</p>
+      </article>
+    </div>
+    <div class="work-subheading">
+      <h3>More from the portfolio.</h3>
+      <div class="filters" role="group" aria-label="Filter more projects">
+        <button
+          data-filter="all"
+          [class.active]="filter() === 'all'"
+          [attr.aria-pressed]="filter() === 'all'"
+          (click)="filter.set('all')"
+        >
+          All</button
+        ><button
+          data-filter="web"
+          [class.active]="filter() === 'web'"
+          [attr.aria-pressed]="filter() === 'web'"
+          (click)="filter.set('web')"
+        >
+          Web</button
+        ><button
+          data-filter="mobile"
+          [class.active]="filter() === 'mobile'"
+          [attr.aria-pressed]="filter() === 'mobile'"
+          (click)="filter.set('mobile')"
+        >
+          Mobile</button
+        ><button
+          data-filter="desktop"
+          [class.active]="filter() === 'desktop'"
+          [attr.aria-pressed]="filter() === 'desktop'"
+          (click)="filter.set('desktop')"
+        >
+          Desktop
+        </button>
+      </div>
+    </div>
+    <p class="sr-only" role="status" aria-live="polite">
+      {{ filteredProjects().length }} projects shown
+    </p>
+    <div class="more-projects">
+      @for (project of filteredProjects(); track project.id) {
+        <article viaReveal class="project-card" [attr.data-type]="project.type">
+          <button
+            class="project-trigger"
+            (click)="projects.open(project.id)"
+            [attr.aria-label]="'View ' + project.name + ' project details'"
+          >
+            <div class="project-image">
+              <img
+                [src]="'/assets/' + project.preview"
+                [alt]="project.name + ' project interface'"
+                loading="lazy"
+                decoding="async"
+                width="800"
+                height="600"
+              />
+            </div>
+            <div class="project-caption">
+              <div>
+                <span class="eyebrow">{{ project.category }}</span>
+                <h3>{{ project.name }}</h3>
+              </div>
+              <span class="circle-arrow"
+                ><svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  aria-hidden="true"
+                >
+                  <path d="M5 19 19 5M5 5h14v14" /></svg
+              ></span>
+            </div>
+          </button>
+          <p>{{ project.summary }}</p>
+        </article>
+      }
+    </div>
+  </div>
+</section>
+<section class="section expertise-section" id="expertise">
+  <div class="wrap">
+    <div viaReveal class="section-heading">
+      <div>
+        <span class="eyebrow">02 / OUR EXPERTISE</span>
+        <h2>Across platforms.<br /><em>Around your business.</em></h2>
+      </div>
+      <p>One software team.<br />The right format for each experience.</p>
+    </div>
+    <div class="expertise-list">
+      <article viaReveal class="expertise-row">
+        <span class="row-number">01</span
+        ><span class="service-mark"
+          ><svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+          >
+            <rect x="3" y="4" width="18" height="16" rx="2" />
+            <path d="M3 9h18M7 6.5h.01M10 6.5h.01" /></svg
+        ></span>
+        <h3>Web applications</h3>
+        <p>
+          Browser-based platforms, websites and portals that bring your services and operations
+          online.
+        </p>
+        <small>Websites / Portals / Platforms</small>
+      </article>
+      <article viaReveal class="expertise-row">
+        <span class="row-number">02</span
+        ><span class="service-mark"
+          ><svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+          >
+            <rect x="6" y="2" width="12" height="20" rx="3" />
+            <path d="M10 5h4M11 19h2" /></svg
+        ></span>
+        <h3>Mobile applications</h3>
+        <p>Mobile experiences for the people who use your business on the move.</p>
+        <small>iOS / Android / Cross-platform</small>
+      </article>
+      <article viaReveal class="expertise-row">
+        <span class="row-number">03</span
+        ><span class="service-mark"
+          ><svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+          >
+            <rect x="2" y="3" width="20" height="14" rx="2" />
+            <path d="M8 22h8M12 17v5" /></svg
+        ></span>
+        <h3>Desktop applications</h3>
+        <p>
+          Focused applications for workstations, specialist environments and day-to-day operations.
+        </p>
+        <small>Workstations / Operational tools</small>
+      </article>
+      <article viaReveal class="expertise-row">
+        <span class="row-number">04</span
+        ><span class="service-mark"
+          ><svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+          >
+            <rect x="3" y="3" width="7" height="7" rx="1" />
+            <rect x="14" y="3" width="7" height="7" rx="1" />
+            <rect x="3" y="14" width="7" height="7" rx="1" />
+            <rect x="14" y="14" width="7" height="7" rx="1" /></svg
+        ></span>
+        <h3>Custom business systems</h3>
+        <p>
+          Software shaped around your processes, roles and the way information moves through your
+          business.
+        </p>
+        <small>Management systems / Integrations</small>
+      </article>
+    </div>
+  </div>
+</section>
+<section class="section about-section" id="about">
+  <div class="wrap about-layout">
+    <div>
+      <span class="eyebrow light">03 / ABOUT VIA</span>
+      <h2>Built on understanding.<br /><em>Focused on the details.</em></h2>
+      <p>
+        VIA Software Egypt develops applications and custom systems for businesses with different
+        needs, teams and workflows.
+      </p>
+      <p>
+        Our work spans mobile products, responsive web experiences and desktop tools — connected by
+        a clear focus on how the software will be used.
+      </p>
+    </div>
+    <div class="approach">
+      <h3>Our approach</h3>
+      <article>
+        <span>01</span>
+        <div>
+          <h4>Understand the workflow</h4>
+          <p>People, processes and the problem to solve.</p>
+        </div>
+      </article>
+      <article>
+        <span>02</span>
+        <div>
+          <h4>Shape the experience</h4>
+          <p>Clear journeys, practical screens and considered interactions.</p>
+        </div>
+      </article>
+      <article>
+        <span>03</span>
+        <div>
+          <h4>Build the system</h4>
+          <p>The application, its data and the connections behind it.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+<section class="section news-preview">
+  <div class="wrap">
+    <div viaReveal class="section-heading">
+      <div>
+        <span class="eyebrow">04 / NEWS & PROJECT NOTES</span>
+        <h2>A closer look<br /><em>at what we build.</em></h2>
+      </div>
+      <a class="text-link" routerLink="/news"
+        >Visit the newsroom
+        <svg
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.5"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          aria-hidden="true"
+        >
+          <path d="M5 19 19 5M5 5h14v14" /></svg
+      ></a>
+    </div>
+    <div class="news-preview-grid">
+      <a viaReveal class="news-link" routerLink="/news" fragment="medcare-note"
+        ><span class="news-category">PROJECT SPOTLIGHT</span>
+        <h3>Inside Medcare:<br />a connected care experience.</h3>
+        <span
+          >Read the project note
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+          >
+            <path d="M5 19 19 5M5 5h14v14" /></svg></span></a
+      ><a viaReveal class="news-link silver" routerLink="/news" fragment="quarto-note"
+        ><span class="news-category">DESKTOP SYSTEMS</span>
+        <h3>Quarto:<br />bringing operations together.</h3>
+        <span
+          >Explore the application
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+          >
+            <path d="M5 19 19 5M5 5h14v14" /></svg></span
+      ></a>
+    </div>
+  </div>
+</section>

@@ -42,3 +42,10 @@ __screenshots__/
 # System files
 .DS_Store
 Thumbs.db
+
+# Local design references and review artifacts
+/.design-reference/
+/.design-assets.zip
+/.drive-*.html
+/.import-design.mjs
+/qa/
