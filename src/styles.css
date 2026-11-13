@@ -207,19 +207,30 @@ button {
   color: #d6c0cb;
   max-width: 470px;
 }
-.circle-arrow {
-  display: grid;
-  place-items: center;
-  border: 1px solid currentColor;
-  border-radius: 50%;
-  width: 43px;
-  height: 43px;
+.project-open {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  min-height: 36px;
+  padding: 9px 12px;
+  border: 1px solid #d8cfd5;
+  border-radius: 8px;
+  background: linear-gradient(140deg, #ffffffa6, #eeebef70);
   color: var(--accent);
   flex-shrink: 0;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  line-height: 1;
+  transition:
+    background-color 0.2s ease,
+    border-color 0.2s ease,
+    color 0.2s ease;
 }
-.circle-arrow svg {
-  width: 19px;
-  height: 19px;
+.project-open svg {
+  width: 14px;
+  height: 14px;
 }
 .hero-art {
   position: absolute;
@@ -516,6 +527,9 @@ button {
   gap: 16px;
   margin-top: 22px;
 }
+.project-caption > div {
+  min-width: 0;
+}
 .project-caption .eyebrow {
   font-size: 8px;
   color: #8d7b87;
@@ -526,15 +540,6 @@ button {
   margin-top: 9px;
   letter-spacing: -0.7px;
 }
-.project-caption .circle-arrow {
-  height: 33px;
-  width: 33px;
-  border-color: #c9bdc5;
-}
-.project-caption .circle-arrow svg {
-  height: 14px;
-  width: 14px;
-}
 .project-card > p {
   font-size: 12px;
   line-height: 1.7;
@@ -542,7 +547,7 @@ button {
   margin-top: 10px;
   max-width: 95%;
 }
-.project-trigger:hover .circle-arrow {
+.project-trigger:is(:hover, :focus-visible) .project-open {
   background: var(--accent);
   color: #fff;
   border-color: var(--accent);
@@ -1156,10 +1161,6 @@ button {
     font-size: 8px;
     letter-spacing: 1.4px;
   }
-  .circle-arrow {
-    width: 35px;
-    height: 35px;
-  }
   .hero-art {
     position: relative;
     width: 132%;
@@ -1634,7 +1635,6 @@ via-connect {
 main:focus {
   outline: none;
 }
-.circle-arrow,
 .text-link svg,
 .news-link svg,
 .latest-teaser > svg {
