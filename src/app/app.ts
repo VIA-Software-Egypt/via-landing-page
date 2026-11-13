@@ -1,4 +1,5 @@
-import { Component, DestroyRef, HostListener, inject, signal } from '@angular/core';
+import { Component, DestroyRef, DOCUMENT, HostListener, inject, signal } from '@angular/core';
+import { ViewportScroller } from '@angular/common';
 import { NavigationEnd, Router, RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 import { Connect } from './shared/connect';
@@ -17,6 +18,11 @@ export class App {
   private readonly projects = inject(ProjectService);
 
   constructor() {
+    const document = inject(DOCUMENT);
+    inject(ViewportScroller).setOffset(() => [
+      0,
+      (document.querySelector('.site-header')?.getBoundingClientRect().height ?? 72) + 20,
+    ]);
     inject(Router)
       .events.pipe(takeUntilDestroyed(inject(DestroyRef)))
       .subscribe((event) => {
