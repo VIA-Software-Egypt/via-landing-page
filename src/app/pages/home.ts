@@ -3,10 +3,11 @@ import { RouterLink } from '@angular/router';
 import { PROJECTS, ProjectType } from '../projects';
 import { ProjectService } from '../shared/project.service';
 import { Reveal } from '../shared/reveal';
+import { AmbientMotion } from '../shared/ambient-motion';
 
 @Component({
   selector: 'via-home',
-  imports: [RouterLink, Reveal],
+  imports: [RouterLink, Reveal, AmbientMotion],
   templateUrl: './home.html',
 })
 export class Home {
